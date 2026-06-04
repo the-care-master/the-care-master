@@ -104,7 +104,7 @@ Thank you!`;
               />
             </div>
 
-            <div className="flex flex-wrap gap-4 lg:mt-6 justify-center items-center" data-aos="fade-up">
+            <div className="flex flex-wrap gap-4 lg:mt-6 mt-3 justify-center items-center" data-aos="fade-up">
               <a
                 href={`https://wa.me/919872778014?text=${encodeURIComponent(text)}`}
                 target="_blank"
