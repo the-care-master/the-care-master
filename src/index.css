@@ -1,0 +1,47 @@
+@import "@fontsource/cinzel-decorative";
+@import "@fontsource/cinzel-decorative/700.css";
+@import "@fontsource/poppins";
+@import "@fontsource/poppins/300.css";
+@import "@fontsource/poppins/500.css";
+@import "@fontsource/poppins/700.css";
+
+.hero-swiper .swiper-button-prev,
+.hero-swiper .swiper-button-next {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  color: white;
+}
+
+.group:hover .swiper-button-prev,
+.group:hover .swiper-button-next {
+  opacity: 1;
+}
+
+@media (max-width: 1023px) {
+  .testimonial-swiper .swiper-button-prev,
+  .testimonial-swiper .swiper-button-next {
+    display: none;
+  }
+}
+
+.testimonial-swiper .swiper-pagination-bullet {
+  display: none;
+}
+
+.testimonial-swiper .swiper-button-prev,
+.testimonial-swiper .swiper-button-next {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .hero-swiper .swiper-button-next,
+  .hero-swiper .swiper-button-prev {
+    display: none;
+  }
+}
+
+#root {
+  background-color: #f5f1f1;
+}
+
+@import "tailwindcss";
