@@ -20,7 +20,7 @@ export default function Header() {
         <NavLink to="/">
           <div className="lg:h-[60px] lg:w-26 h-14 w-24 flex items-center">
             <img
-              src="/images/logo.webp"
+              src="/images/logo-final.webp"
               alt="Care Master Logo"
               className="h-12 lg:h-12 w-auto object-contain brightness-150 contrast-125"
             />

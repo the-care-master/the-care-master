@@ -34,7 +34,7 @@ export default function Footer() {
             <div className="flex items-center justify-center mb-4 lg:h-16">
               <Link to="/">
                 <img
-                  src="/images/logo.webp"
+                  src="/images/logo-final.webp"
                   alt="Logo"
                   className="w-40 rounded-sm h-16 cursor-pointer brightness-150 contrast-135 "
                 />
