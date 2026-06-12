@@ -12,7 +12,7 @@ export default function ContactUs() {
                 <div className="absolute inset-0 bg-black/60"></div>
 
                 <div className="relative z-10 h-full flex items-center justify-center">
-                    <div className="text-center px-4" data-aos="fade-up">
+                    <div className="text-center px-4 font-serif" data-aos="fade-up">
                         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white">
                             Contact Us
                         </h1>

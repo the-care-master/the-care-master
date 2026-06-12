@@ -53,7 +53,7 @@ ${message}
         <div className="hidden lg:block" />
 
         <div className="lg:bg-[#f0dfd1] text-white lg:text-black px-6 md:px-10 lg:px-16 py-6 md:py-10 lg:py-12 flex items-center">
-          <div className="w-full max-w-xl mx-auto">
+          <div className="w-full max-w-xl mx-auto font-serif">
 
             <h2 className="text-3xl md:text-4xl lg:text-[45px] leading-tight lg:leading-none lg:text-[#2d3440] text-center" data-aos="fade-down">
               <span className="font-light">

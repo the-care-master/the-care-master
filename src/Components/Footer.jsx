@@ -28,15 +28,15 @@ export default function Footer() {
   return (
     <footer className="bg-black/90 text-white">
       <div className="max-w-7xl mx-auto px-12 py-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:gap-10 gap-6">
 
           <div className="text-center">
-            <div className="flex items-center justify-center mb-4">
+            <div className="flex items-center justify-center mb-1 lg:h-18">
               <Link to="/">
                 <img
                   src="/images/logo.webp"
                   alt="Logo"
-                  className="w-30 rounded-sm shadow-lg hover:shadow-blue-50 h-24 cursor-pointer"
+                  className="w-40 rounded-sm h-38 cursor-pointer brightness-150 contrast-135 drop-shadow-[0_0_12px_rgba(56,189,248,0.6)]"
                 />
               </Link>
             </div>

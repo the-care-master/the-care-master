@@ -62,7 +62,7 @@ function Testimonials() {
 
       <div className="relative z-10 max-w-5xl mx-auto px-4 md:px-6 py-4">
 
-        <h2 className="text-center text-3xl md:text-4xl lg:text-[50px] leading-tight lg:leading-none mb-8 text-white" data-aos="fade-up">
+        <h2 className="text-center text-3xl md:text-4xl lg:text-[50px] leading-tight lg:leading-none mb-8 text-white font-serif" data-aos="fade-up">
           <span className="font-light">Our Heroes</span>{" "}
           <span className="font-bold">Says</span>
         </h2>
@@ -80,7 +80,7 @@ function Testimonials() {
               <div className="text-center">
 
                 {/* Card */}
-                <div className="bg-white rounded-3xl px-6 md:px-10 py-4 md:py-8 max-w-3xl mx-auto shadow-xl" data-aos="zoom-in">
+                <div className="bg-white rounded-3xl px-6 md:px-10 py-4 md:py-8 max-w-3xl mx-auto shadow-xl font-serif" data-aos="zoom-in">
 
                   <p className="text-gray-800 text-sm md:text-base lg:text-[18px] leading-7 md:leading-8 lg:leading-10">
                     {item.text}

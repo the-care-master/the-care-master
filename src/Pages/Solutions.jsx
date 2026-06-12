@@ -76,7 +76,7 @@ function Solutions() {
                             Healthcare Solutions
                         </h1>
 
-                        <p className="mt-4 lg:text-lg text-md text-gray-200 lg:max-w-3xl mx-auto">
+                        <p className="mt-4 lg:text-lg text-md text-gray-200 lg:max-w-3xl mx-auto font-serif">
                             Comprehensive healthcare and mobility solutions
                             designed for hospitals, clinics, rehabilitation
                             centres and home care environments.
@@ -88,11 +88,11 @@ function Solutions() {
                 <div className="max-w-7xl mx-auto px-4">
 
                     <div className="text-center mb-6" data-aos="fade-down">
-                        <h2 className="lg:text-4xl text-2xl font-serif underline font-bold text-gray-800">
+                        <h2 className="lg:text-4xl text-2xl font-serif underline font-bold text-gray-800 ">
                             Our Healthcare Solutions
                         </h2>
 
-                        <p className="mt-2 text-gray-700">
+                        <p className="mt-2 text-gray-700 font-serif">
                             Tailored solutions for every healthcare environment.
                         </p>
                     </div>
@@ -102,7 +102,7 @@ function Solutions() {
                             <div
                                 key={solution.id}
                                 className={`grid lg:grid-cols-2 lg:gap-10 items-center pb-6 ${index !== solutions.length - 1
-                                        ? "mb-6 border-b border-gray-700"
+                                        ? "mb-6 border-b border-gray-700 font-serif"
                                         : ""
                                     } ${index % 2 !== 0 ? "lg:[&>*:first-child]:order-2" : ""}`}
                             >
@@ -124,7 +124,7 @@ function Solutions() {
                                         {solution.title}
                                     </h2>
 
-                                    <p className="mt-4 text-gray-800 leading-7">
+                                    <p className="mt-4 text-gray-800 leading-7 font-serif">
                                         {solution.description}
                                     </p>
 
@@ -161,7 +161,7 @@ function Solutions() {
                 </div>
             </section>
             <section className="bg-gradient-to-r from-[#3c5269] via-[#263541] to-[#263847] lg:py-14 py-8 border-b border-t">
-                <div className="max-w-4xl mx-auto text-center px-4" data-aos="fade-up">
+                <div className="max-w-4xl mx-auto text-center px-4 font-serif" data-aos="fade-up">
                     <h2 className="lg:text-4xl text-2xl font-bold text-white">
                         Looking for Custom Healthcare Solutions?
                     </h2>

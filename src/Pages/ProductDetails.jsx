@@ -52,7 +52,7 @@ Thank you!`;
         <div className="absolute inset-0 bg-black/60"></div>
 
         <div className="relative z-10 h-full flex items-center justify-center">
-          <div className="text-center px-4" data-aos="flip-up">
+          <div className="text-center px-4 font-serif" data-aos="flip-up">
             <span className="inline-block px-4 py-1 rounded-full bg-blue-200 text-[#17191b] border border-white/20 text-sm mb-4">
               Premium Healthcare Equipment
             </span>
@@ -83,16 +83,16 @@ Thank you!`;
           </div>
 
           {/* Product Info */}
-          <div className="flex flex-col justify-center items-center text-center" data-aos="fade-up">
+          <div className="flex flex-col justify-center items-center text-center font-serif" data-aos="fade-up">
             <span className="inline-block bg-blue-100 text-[#0F4C81] px-4 py-1 rounded-full text-sm font-medium">
               {product.category}
             </span>
 
-            <h1 className="text-4xl font-bold text-gray-800 mt-4">
+            <h1 className="text-4xl font-bold text-gray-800 mt-4 font-serif">
               {product.name}
             </h1>
 
-            <p className="mt-6 text-gray-600 leading-8">
+            <p className="mt-6 text-gray-600 leading-8 font-serif">
               {product.description}
             </p>
             <div className="p-1 shadow-xs lg:hidden flex" data-aos="zoom-in">
@@ -100,7 +100,7 @@ Thank you!`;
                 src={product.image}
                 alt={product.name}
                 loading="lazy"
-                className="w-full h-[400px] object-contain hover:scale-105 transition duration-200"
+                className="w-full h-[380px] object-contain hover:scale-105 transition duration-200"
               />
             </div>
 
@@ -125,8 +125,8 @@ Thank you!`;
         </div>
       </section>
       <hr className="border-gray-800" />
-      <section className="lg:py-12 py-6">
-        <div className="max-w-7xl mx-auto px-4">
+      <section className="lg:py-12 py-6 bg-gradient-to-r from-[#282c30] via-[#13171a] to-[#1a2127] text-white">
+        <div className="max-w-7xl mx-auto px-4 font-serif">
           <h2 className="lg:text-3xl text-2xl font-bold text-center mb-8" data-aos="fade-down">
             Why Choose The Care Master?
           </h2>

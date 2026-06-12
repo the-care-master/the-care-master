@@ -48,9 +48,9 @@ function HeroSlider() {
               <div className="absolute inset-0 z-20 flex items-center">
                 <div className="max-w-7xl mx-auto w-full px-6 lg:px-10">
 
-                  <div className="max-w-2xl text-center lg:text-left" data-aos="flip-up">
+                  <div className="max-w-2xl text-center lg:text-left font-serif" data-aos="flip-up">
 
-                    <h1 className="text-white text-2xl md:text-5xl lg:text-6xl font-bold leading-tight">
+                    <h1 className="text-white text-2xl md:text-4xl lg:text-5xl font-bold leading-tight">
                       Premium Hospital
                       <br />
                       Furniture Solutions

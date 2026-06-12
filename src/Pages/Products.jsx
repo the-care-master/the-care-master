@@ -62,12 +62,12 @@ export default function Products() {
             <hr className="border-gray-700 max-w-4xl mx-auto mb-4" />
 
             {/* Category Header */}
-            <section className="max-w-4xl mx-auto text-center px-4" data-aos="fade-up">
+            <section className="max-w-4xl mx-auto text-center px-4 font-serif" data-aos="fade-up">
                 <h2 className="text-2xl md:text-3xl font-bold uppercase text-gray-800 font-serif underline">
                     {selectedCategory}
                 </h2>
 
-                <p className="mt-4 text-sm md:text-base text-gray-700 leading-relaxed">
+                <p className="mt-4 text-sm md:text-base text-gray-700 leading-relaxed font-serif">
                     {categoryDescriptions[selectedCategory]}
                 </p>
             </section>
@@ -92,7 +92,7 @@ export default function Products() {
                                 className="h-64 md:h-72 lg:h-80 mx-auto object-contain transition duration-300 hover:scale-105"
                             />
 
-                            <p className="mt-3 mb-5 md:mb-6 text-gray-700 text-sm leading-relaxed line-clamp-3 max-w-sm mx-auto">
+                            <p className="mt-3 mb-5 md:mb-6 text-gray-700 text-sm leading-relaxed line-clamp-3 max-w-sm mx-auto font-serif">
                                 {product.description}
                             </p>
 

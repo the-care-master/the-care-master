@@ -18,11 +18,11 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-3 lg:py-2 py-3 lg:px-12 flex items-center justify-between">
 
         <NavLink to="/">
-          <div className="lg:h-[60px] lg:w-20 h-14 w-16 flex items-center">
+          <div className="lg:h-[60px] lg:w-26 h-14 flex items-center">
             <img
               src="/images/logo.webp"
-              alt="Logo"
-              className="h-full w-full hover:scale-105 transition"
+              alt="Care Master Logo"
+              className="h-20 lg:h-26 w-auto object-contain brightness-150 contrast-135 drop-shadow-[0_0_12px_rgba(56,189,248,0.6)]"
             />
           </div>
         </NavLink>
@@ -49,7 +49,7 @@ export default function Header() {
             onClick={() => setOpen(!open)}
             className="w-10 h-10 rounded-full bg-white flex items-center justify-center lg:hidden hover:bg-gray-800 hover:text-white cursor-pointer"
           >
-            {open ? <X size={20} aria-label="Close Menu"/> : <Menu size={20} aria-label="Open Menu"/>}
+            {open ? <X size={20} aria-label="Close Menu" /> : <Menu size={20} aria-label="Open Menu" />}
           </button>
 
           <a href="tel:+919872778014" aria-label="Call The Care Master" className="w-10 h-10 rounded-full bg-gradient-to-r from-[#3c5269] via-[#263541] to-[#263847] text-white flex items-center justify-center hover:bg-gray-800 hover:text-white cursor-pointer hover:bg-gradient-to-r from-[#3d5b7a] via-[#273a49] to-[#263847] hover:scale-105">

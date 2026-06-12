@@ -4,8 +4,8 @@ import React from "react";
 function Certifications() {
 
   return (
-    <section className="py-10 md:py-16 lg:py-24 bg-gradient-to-r from-[#42474d] via-[#14181b] to-[#1c2329]">
-      <div className="max-w-6xl mx-auto lg:px-0 px-6">
+    <section className="py-10 md:py-16 lg:py-16 bg-gradient-to-r from-[#42474d] via-[#14181b] to-[#1c2329]">
+      <div className="max-w-6xl mx-auto lg:px-0 px-6 font-serif">
 
         <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white text-center" data-aos="fade-down">
           OUR CERTIFICATIONS

@@ -15,7 +15,7 @@ function AboutSection() {
                 />
                 <div className="absolute inset-0 bg-[#f3f3f3]/5" />
 
-                <div className="relative z-10 px-6 md:px-10 lg:px-20" data-aos="fade-up">
+                <div className="relative z-10 px-6 md:px-10 lg:px-20 font-serif" data-aos="fade-up">
                     <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-gray-800 text-center lg:text-left">
                         Hospital <span className="font-light">Beds</span>
                     </h1>
@@ -65,11 +65,11 @@ function AboutSection() {
                             <Factory size={26} color="white"/>
                         </div>
 
-                        <h3 className="text-xl font-bold mb-2 text-black">
+                        <h3 className="text-xl font-bold mb-2 text-black font-serif">
                             About Us
                         </h3>
 
-                        <p className="text-sm text-black/90 font-semibold">
+                        <p className="text-sm text-black/90 font-semibold font-serif">
                             Know more about us!
                         </p>
 

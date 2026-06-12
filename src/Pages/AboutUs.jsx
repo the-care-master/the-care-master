@@ -15,6 +15,25 @@ import {
 import Certifications from '../Components/Certifications'
 import ClientSection from '../Components/ClientsSection'
 
+const whyChooseUs = [
+    {
+        title: "Industry Pioneers",
+        desc: "Leading contributors in hospital furniture and medical equipment solutions."
+    },
+    {
+        title: "Certified Quality",
+        desc: "Products meet international quality and safety standards."
+    },
+    {
+        title: "Wide Product Range",
+        desc: "Complete healthcare solutions under one roof."
+    },
+    {
+        title: "Customer-Centric",
+        desc: "Dedicated support and after-sales service."
+    },
+];
+
 const values = [
     {
         icon: <Handshake size={40} />,
@@ -56,13 +75,14 @@ function AboutUs() {
                 <div className="absolute inset-0 bg-black/60"></div>
 
                 <div className="relative z-10 h-full flex items-center justify-center">
-                    <div className="text-center px-4" data-aos="fade-up">
-                        <h1 className="text-3xl md:text-5xl font-bold text-white">
-                            About The Care Master
+                    <div className="text-center px-4 font-serif" data-aos="fade-up">
+                        <h1 className="text-2xl md:text-4xl font-bold text-white">
+                            Healthcare Excellence Through Innovation & Quality
                         </h1>
 
                         <p className="mt-4 lg:text-lg text-md text-gray-200 lg:max-w-3xl mx-auto">
-                            Dedicated to delivering trusted healthcare and medical equipment solutions, empowering hospitals, clinics, and care facilities with quality, innovation, and reliability.
+                            Delivering trusted medical equipment, hospital furniture, and healthcare
+                            solutions designed to improve patient care and operational efficiency.
                         </p>
                     </div>
                 </div>
@@ -83,53 +103,87 @@ function AboutUs() {
                         <div className="relative lg:flex justify-center hidden">
 
                             <img
-                                src="/images/the-care-master.webp"
+                                src="/images/logo.webp"
                                 alt="About Background"
                                 loading="lazy"
-                                className="w-[65vh] h-[65vh] rounded-full cursor-pointer hover:scale-105 shadow-2xl shadow-black"
+                                className="w-[65vh] h-[65vh] rounded-full cursor-pointer hover:scale-105 shadow-md"
                                 data-aos="zoom-in"
                             />
                         </div>
 
                         <div className="text-center" data-aos="fade-down">
 
-                            <h3 className="text-3xl sm:text-4xl lg:text-5xl font-light text-gray-500 mb-6 lg:mb-8">
+                            <h3 className="text-3xl sm:text-4xl lg:text-5xl font-light text-gray-500 mb-6">
                                 <span className="font-bold text-gray-700">
                                     ABOUT
                                 </span>{" "}
                                 US
                             </h3>
 
-                            <div className="space-y-4 md:space-y-5 text-gray-700 text-base sm:text-lg leading-7 sm:leading-8">
+                            <div className="space-y-4 text-gray-700 text-base sm:text-md leading-8 font-serif">
                                 <p>
-                                    Established in 2015 ,India the care master has gained immense expertise in supplying & trading of Medical equipment, wheel chair, ventilator etc. The supplier company is located in Jalandhar, Punjab and is one of the leading sellers of listed products. Buy Medical equipment, wheel chair, ventilator in bulk from us for the best quality products and service.
+                                    The Care Master is a trusted name in the medical equipment and hospital
+                                    furniture industry with over 15 years of experience in domestic and
+                                    international trade. We specialize in providing high-quality healthcare
+                                    solutions designed to enhance patient care, hospital efficiency, and
+                                    medical safety.
                                 </p>
 
                                 <p>
-                                    Under the canopy of latest technologies and modern engineering we
-                                    develop products with an objective of providing maximum
-                                    satisfaction and safety to doctors as well as patients.
+                                    Our product portfolio includes Semi Fowler Beds, ICU Beds, Patient Trolleys,
+                                    Operation Theatre Equipment, Surgical Pendants, Modular OTs, Medical Gas
+                                    Pipeline Systems, Diagnostic Instruments, Endoscopy Equipment, Wheelchairs,
+                                    Stretchers, Ventilators, Anaesthesia Workstations, ECG Machines, Sterilization
+                                    Systems, and much more.
                                 </p>
 
                                 <p>
-                                    We drive to make healthcare better by supporting caregivers in the
-                                    well-being of patients and providing innovative healthcare
-                                    solutions.
+                                    We are committed to delivering innovative, durable, and reliable healthcare
+                                    solutions that meet modern medical standards while ensuring maximum comfort
+                                    for patients and convenience for healthcare professionals.
                                 </p>
 
                             </div>
                             <div className="relative flex justify-center lg:hidden mt-2">
 
                                 <img
-                                    src="/images/the-care-master.webp"
+                                    src="/images/logo.webp"
                                     alt="About Background"
                                     loading='lazy'
-                                    className="w-60 rounded-2xl"
+                                    className="w-60 rounded-2xl cursor-pointer hover:scale-105 shadow-md"
                                     data-aos="zoom-in"
                                 />
                             </div>
                         </div>
                     </div>
+                </div>
+            </section>
+            <section className="py-10 bg-gradient-to-r from-[#2b2e33] via-[#2e353b] to-[#181d22] border-b">
+                <div className="max-w-6xl mx-auto px-4">
+
+                    <h2 className="text-center text-3xl lg:text-4xl mb-6" data-aos="fade-up">
+                        <span className="font-bold text-gray-200">WHY</span>{" "}
+                        <span className="font-light text-gray-300">CHOOSE US</span>
+                    </h2>
+
+                    <div className="grid md:grid-cols-4 lg:gap-10 gap-4">
+                        {whyChooseUs.map((item, index) => (
+                            <div
+                                key={index}
+                                className="lg:p-5 p-3 border-gray-800 rounded-xl bg-gradient-to-r from-[#3c5269] via-[#263541] to-[#263847] shadow-sm text-center transition hover:shadow-2xl hover:translate-y-1"
+                                data-aos="zoom-in"
+                            >
+                                <h3 className="text-xl font-bold text-white">
+                                    {item.title}
+                                </h3>
+
+                                <p className="text-[14px] mt-3 text-white/90">
+                                    {item.desc}
+                                </p>
+                            </div>
+                        ))}
+                    </div>
+
                 </div>
             </section>
             <Certifications />
@@ -155,9 +209,10 @@ function AboutUs() {
                                         VISION
                                     </h3>
 
-                                    <p className="mt-2 text-gray-500 lg:text-lg text-md leading-8">
-                                        To be the industry leader in life
-                                        improving products
+                                    <p className="mt-2 text-gray-500 lg:text-lg text-md leading-8 font-serif">
+                                        To become a leading healthcare solutions provider by delivering innovative,
+                                        reliable, and high-quality medical equipment and hospital furniture that
+                                        improves patient care worldwide.
                                     </p>
                                 </div>
 
@@ -177,11 +232,10 @@ function AboutUs() {
                                         MISSION
                                     </h3>
 
-                                    <p className="mt-2 text-gray-500 lg:text-lg text-md leading-8">
-                                        To make most durable, safe,
-                                        advanced and modern looking
-                                        beds & care products providing
-                                        maximum user satisfaction.
+                                    <p className="mt-2 text-gray-500 lg:text-lg text-md leading-8 font-serif">
+                                        To provide hospitals and healthcare institutions with advanced, safe, and
+                                        cost-effective medical solutions while maintaining the highest standards of
+                                        quality, service, and customer satisfaction.
                                     </p>
                                 </div>
 
@@ -294,7 +348,7 @@ function AboutUs() {
                                         {item.title}
                                     </h3>
 
-                                    <p className="text-gray-700 leading-8 text-base">
+                                    <p className="text-gray-700 leading-8 text-base font-serif">
                                         {item.desc}
                                     </p>
                                 </div>
