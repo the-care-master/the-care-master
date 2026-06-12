@@ -44,4 +44,11 @@
   background-color: #f5f1f1;
 }
 
+header{
+  font-family: sans-serif;
+}
+footer{
+  font-family: sans-serif;
+}
+
 @import "tailwindcss";

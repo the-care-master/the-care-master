@@ -67,7 +67,7 @@ function AboutUs() {
     return (
         <div>
             <section
-                className="relative h-[40vh] lg:h-[65vh] bg-cover bg-center"
+                className="relative h-[40vh] lg:h-[60vh] bg-cover bg-center"
                 style={{
                     backgroundImage: "url('/images/about-us.webp')",
                 }}
@@ -103,10 +103,10 @@ function AboutUs() {
                         <div className="relative lg:flex justify-center hidden">
 
                             <img
-                                src="/images/logo.webp"
+                                src="/images/logo2.webp"
                                 alt="About Background"
                                 loading="lazy"
-                                className="w-[65vh] h-[65vh] rounded-full cursor-pointer hover:scale-105 shadow-md"
+                                className="w-[65vh] h-[65vh] object-contain rounded-full cursor-pointer hover:scale-105"
                                 data-aos="zoom-in"
                             />
                         </div>
@@ -147,10 +147,10 @@ function AboutUs() {
                             <div className="relative flex justify-center lg:hidden mt-2">
 
                                 <img
-                                    src="/images/logo.webp"
+                                    src="/images/logo2.webp"
                                     alt="About Background"
                                     loading='lazy'
-                                    className="w-60 rounded-2xl cursor-pointer hover:scale-105 shadow-md"
+                                    className="w-60 rounded-2xl cursor-pointer hover:scale-105"
                                     data-aos="zoom-in"
                                 />
                             </div>

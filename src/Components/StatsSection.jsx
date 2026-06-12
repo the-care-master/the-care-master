@@ -36,7 +36,7 @@ function StatsSection() {
   return (
     <section ref={ref} className="bg-gradient-to-r from-[#282c30] via-[#13171a] to-[#1a2127] text-white py-10 border-t border-gray-800">
       <div className="max-w-7xl mx-auto px-4 font-serif">
-        <h1 className="text-2xl md:text-4xl font-bold text-center lg:mb-12 mb-6" data-aos="fade-down">
+        <h1 className="text-2xl md:text-4xl font-bold text-center lg:mb-12 mb-6 animate-pulse">
           Why Choose The Care Master?
         </h1>
         <div className="grid grid-cols-2 md:grid-cols-4 lg:gap-8 gap-4 text-center">

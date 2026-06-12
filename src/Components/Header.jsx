@@ -18,11 +18,11 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-3 lg:py-2 py-3 lg:px-12 flex items-center justify-between">
 
         <NavLink to="/">
-          <div className="lg:h-[60px] lg:w-26 h-14 flex items-center">
+          <div className="lg:h-[60px] lg:w-26 h-14 w-24 flex items-center">
             <img
-              src="/images/Background.png"
+              src="/images/logo.webp"
               alt="Care Master Logo"
-              className="h-20 lg:h-20 w-auto object-contain brightness-150 contrast-125"
+              className="h-12 lg:h-12 w-auto object-contain brightness-150 contrast-125"
             />
           </div>
         </NavLink>

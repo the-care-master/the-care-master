@@ -4,7 +4,7 @@ function OurAchievements() {
 
   return (
     <section className="py-6 lg:py-12 bg-gradient-to-r from-[#42474d] via-[#14181b] to-[#1c2329] text-white overflow-hidden">
-  <div className="max-w-7xl mx-auto px-6">
+  <div className="max-w-7xl mx-auto px-6 font-serif">
 
     <div className="text-center mb-8">
       <h2

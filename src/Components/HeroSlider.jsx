@@ -33,7 +33,7 @@ function HeroSlider() {
         autoplay={{ delay: 3000 }}
         navigation
         loop
-        className="hero-swiper w-full h-[350px] md:h-[380px] lg:h-[450px]"
+        className="hero-swiper w-full h-[350px] md:h-[380px] lg:h-[430px]"
       >
         {fadeImages.map((slide, i) => (
           <SwiperSlide key={i}>

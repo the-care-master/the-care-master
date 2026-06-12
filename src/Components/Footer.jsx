@@ -31,12 +31,12 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:gap-10 gap-6">
 
           <div className="text-center">
-            <div className="flex items-center justify-center mb-1 lg:h-18">
+            <div className="flex items-center justify-center mb-4 lg:h-16">
               <Link to="/">
                 <img
                   src="/images/logo.webp"
                   alt="Logo"
-                  className="w-40 rounded-sm h-38 cursor-pointer brightness-150 contrast-135 drop-shadow-[0_0_12px_rgba(56,189,248,0.6)]"
+                  className="w-40 rounded-sm h-16 cursor-pointer brightness-150 contrast-135 "
                 />
               </Link>
             </div>

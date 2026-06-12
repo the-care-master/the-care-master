@@ -63,7 +63,7 @@ function Solutions() {
     return (
         <>
             <section
-                className="relative h-[40vh] lg:h-[65vh] bg-cover bg-center"
+                className="relative h-[40vh] lg:h-[60vh] bg-cover bg-center"
                 style={{
                     backgroundImage: "url('/images/slider/slide7.webp')",
                 }}
