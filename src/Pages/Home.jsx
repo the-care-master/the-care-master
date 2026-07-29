@@ -1,6 +1,6 @@
 import React, { Suspense, lazy } from "react";
 import HeroSlider from "../Components/HeroSlider";
-import FeaturedProductsSlider from "../Components/FeaturedProductsSlider";
+const FeaturedProductsSlider = lazy(() => import("../Components/FeaturedProductsSlider"));
 const StatsSection = lazy(() => import("../Components/StatsSection"));
 const AboutSection = lazy(() => import("../Components/AboutSection"));
 const SustainabilitySection = lazy(() => import("../Components/SustainabilitySection"));
@@ -13,7 +13,6 @@ export default function Home() {
   return (
     <>
       <HeroSlider />
-      <Suspense>
         <FeaturedProductsSlider/>
         <StatsSection />
         <AboutSection />
@@ -22,7 +21,6 @@ export default function Home() {
         <ClientSection />
         <Testimonials />
         <ContactSection />
-      </Suspense>
     </>
   );
 }

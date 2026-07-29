@@ -2,18 +2,17 @@ import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Navigation } from 'swiper/modules';
 import { ChevronLeft, ChevronRight, ArrowRight } from 'lucide-react';
-import { products } from './ProductsData'; // Path adjust kar lavo
+import { products } from './ProductsData';
 import { Link } from 'react-router-dom';
 
 
 export default function FeaturedProductsSlider() {
-  // 1. Maintaining Category Order: Top 12 products selection
   const featuredProductIds = [
-    1, 2, 4, 5,       // Hospital Beds
-    8, 10, 13,        // OT Equipment
-    17, 18,           // Mobility Solutions
-    22,               // Respiratory Care
-    27, 30            // Patient Care Equipment
+    1, 2, 4, 5,
+    8, 10, 13,
+    17, 18,
+    22,
+    27, 30
   ];
 
   const sliderProducts = featuredProductIds
@@ -23,8 +22,7 @@ export default function FeaturedProductsSlider() {
   return (
     <section className="lg:py-8 py-6 bg-gray-100 relative font-serif">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        {/* Header Section */}
+     
         <div className="flex flex-col md:flex-row lg:items-end lg:justify-between justify-center items-center text-center lg:text-left mb-8">
           <div>
             <span className="uppercase tracking-[3px] text-gray-700 font-bold text-xs sm:text-sm">
@@ -34,8 +32,7 @@ export default function FeaturedProductsSlider() {
               Our Medical & Hospital Equipment
             </h2>
           </div>
-
-          {/* Navigation Arrows */}
+         
           <div className="hidden md:flex items-center space-x-3">
             <button
               type="button"
@@ -55,7 +52,6 @@ export default function FeaturedProductsSlider() {
         </div>
         <div className="relative group">
           
-          {/* Mobile Overlay Navigation Buttons (Visible ONLY on Mobile md:hidden) */}
           <button
             type="button"
             aria-label="Previous Slide"
@@ -71,8 +67,7 @@ export default function FeaturedProductsSlider() {
           >
             <ChevronRight size={18} />
           </button>
-
-        {/* Swiper Slider */}
+       
         <Swiper
           modules={[Autoplay, Navigation]}
           spaceBetween={24}
@@ -96,8 +91,7 @@ export default function FeaturedProductsSlider() {
           {sliderProducts.map((item) => (
             <SwiperSlide key={item.id} className="h-auto">
               <div className="bg-white rounded-xl overflow-hidden border border-gray-300 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col lg:h-[400px] h-[380px]">
-                
-                {/* Image Box */}
+           
                 <div className="relative h-60 bg-gray-100 overflow-hidden flex items-center justify-center p-4">
                   <img
                     src={item.image}
@@ -109,7 +103,6 @@ export default function FeaturedProductsSlider() {
                   </span>
                 </div>
 
-                {/* Content Box */}
                 <div className="p-5 flex flex-col justify-between flex-grow">
                   <div>
                     <h3 className="text-base font-bold text-gray-800 hover:text-gray-950 transition-colors line-clamp-1">
