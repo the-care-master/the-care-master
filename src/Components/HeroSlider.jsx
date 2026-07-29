@@ -4,10 +4,6 @@ import {
   Pagination,
   Navigation,
 } from "swiper/modules";
-
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
 import { Link } from "react-router-dom";
 
 const fadeImages = [
@@ -33,7 +29,7 @@ function HeroSlider() {
         autoplay={{ delay: 3000 }}
         navigation
         loop
-        className="hero-swiper w-full h-[350px] md:h-[380px] lg:h-[430px]"
+        className="hero-swiper w-full h-[380px] md:h-[380px] lg:h-[460px]"
       >
         {fadeImages.map((slide, i) => (
           <SwiperSlide key={i}>
@@ -63,7 +59,7 @@ function HeroSlider() {
                       hospital efficiency.
                     </p>
 
-                    <div className="flex flex-row gap-4 mt-8 justify-center lg:justify-start">
+                    <div className="flex lg:flex-row flex-col lg:gap-4 gap-2 lg:mt-8 mt-4 justify-center lg:justify-start">
                       <Link
                         to="/products"
                         className="bg-gray-800 hover:bg-gray-00 text-white lg:px-8 px-4 lg:py-3 py-2 rounded-full transition inline-block"

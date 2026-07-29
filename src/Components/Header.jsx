@@ -22,6 +22,9 @@ export default function Header() {
             <img
               src="/images/logo-final.webp"
               alt="Care Master Logo"
+              width={180}
+              height={48}
+              loading="eager"
               className="h-12 lg:h-12 w-auto object-contain brightness-150 contrast-125"
             />
           </div>
@@ -47,17 +50,13 @@ export default function Header() {
 
           <button
             onClick={() => setOpen(!open)}
-            className="w-10 h-10 rounded-full bg-white flex items-center justify-center lg:hidden hover:bg-gray-800 hover:text-white cursor-pointer"
+            className="w-10 h-10 rounded-full bg-gradient-to-r from-[#3c5269] via-[#263541] to-[#263847] flex items-center justify-center lg:hidden hover:bg-gray-800 text-white cursor-pointer"
           >
             {open ? <X size={20} aria-label="Close Menu" /> : <Menu size={20} aria-label="Open Menu" />}
           </button>
 
-          <a href="tel:+919872778014" aria-label="Call The Care Master" className="w-10 h-10 rounded-full bg-gradient-to-r from-[#3c5269] via-[#263541] to-[#263847] text-white flex items-center justify-center hover:bg-gray-800 hover:text-white cursor-pointer hover:bg-gradient-to-r from-[#3d5b7a] via-[#273a49] to-[#263847] hover:scale-105">
-            <Phone size={18} />
-          </a>
-
           <Link to="/contact-us">
-            <button className="bg-gradient-to-r from-[#3c5269] via-[#263541] to-[#263847] text-white px-5 py-2 rounded-full font-medium hover:bg-gradient-to-r from-[#3d5b7a] via-[#273a49] to-[#263847] cursor-pointer hover:scale-105">
+            <button className="bg-gradient-to-r from-[#3c5269] via-[#263541] to-[#263847] text-white lg:px-5 px-3 py-2 rounded-full font-medium hover:bg-gradient-to-r from-[#3d5b7a] via-[#273a49] to-[#263847] cursor-pointer hover:scale-105">
               Inquire Now
             </button>
           </Link>

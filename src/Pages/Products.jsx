@@ -73,26 +73,27 @@ export default function Products() {
             </section>
 
             {/* Products */}
-            <section className="max-w-6xl mx-auto px-4 md:px-6 lg:px-8 py-8 md:py-10">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+            <section className="max-w-7xl mx-auto px-4 py-8 md:py-10">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
                     {filteredProducts.map((product) => (
                         <Link
                             to={`/products-details/${product.slug}`}
                             key={product.id}
-                            className="text-center border-b border-gray-400 py-4 md:py-5 px-3 md:px-4 transition duration-300 hover:shadow-lg bg-white/35"
+                            className="text-center border-b border-gray-400 lg:border-none py-4 px-3 transition duration-300 hover:shadow-lg bg-white/35"
                             data-aos="zoom-in"
                         >
-                            <h3 className="mb-4 text-xl md:text-2xl font-bold font-serif uppercase text-gray-800">
-                                {product.name}
-                            </h3>
+                            
                             <img
                                 src={product.image}
                                 alt={product.name}
                                 loading="lazy"
-                                className="h-64 md:h-72 lg:h-80 mx-auto object-contain transition duration-300 hover:scale-105"
+                                className="h-64 mx-auto object-contain transition duration-300 hover:scale-105"
                             />
+                            <h3 className="my-4 text-xl font-bold font-serif uppercase text-gray-800">
+                                {product.name}
+                            </h3>
 
-                            <p className="mt-3 mb-5 md:mb-6 text-gray-700 text-sm leading-relaxed line-clamp-3 max-w-sm mx-auto font-serif">
+                            <p className="mt-3 mb-5 text-gray-700 text-sm leading-relaxed line-clamp-3 max-w-sm mx-auto font-serif">
                                 {product.description}
                             </p>
 

@@ -1,8 +1,6 @@
-
 import React from "react";
 
 function Certifications() {
-
   return (
     <section className="py-10 md:py-16 lg:py-16 bg-gradient-to-r from-[#42474d] via-[#14181b] to-[#1c2329]">
       <div className="max-w-6xl mx-auto lg:px-0 px-6 font-serif">
@@ -27,7 +25,9 @@ function Certifications() {
         >
           <img
             src="/images/certificates/iso45001.webp"
-            alt="ISO 45001"
+            alt="ISO 45001 Certification"
+            width={64}
+            height={64}
             loading="lazy"
             className="w-16 lg:w-18 mx-auto hover:scale-105 transition"
             data-aos="zoom-in"
@@ -35,7 +35,9 @@ function Certifications() {
 
           <img
             src="/images/certificates/iso50001.webp"
-            alt="ISO 50001"
+            alt="ISO 50001 Certification"
+            width={64}
+            height={64}
             loading="lazy"
             className="w-16 lg:w-18 mx-auto hover:scale-105 transition"
             data-aos="zoom-in"
@@ -43,7 +45,9 @@ function Certifications() {
 
           <img
             src="/images/certificates/iso9001.webp"
-            alt="ISO 9001"
+            alt="ISO 9001 Certification"
+            width={64}
+            height={64}
             loading="lazy"
             className="w-16 lg:w-18 mx-auto hover:scale-105 transition"
             data-aos="zoom-in"
@@ -51,7 +55,9 @@ function Certifications() {
 
           <img
             src="/images/certificates/iso13485.webp"
-            alt="ISO 13485"
+            alt="ISO 13485 Certification"
+            width={64}
+            height={64}
             loading="lazy"
             className="w-16 lg:w-18 mx-auto hover:scale-105 transition"
             data-aos="zoom-in"
@@ -59,7 +65,9 @@ function Certifications() {
 
           <img
             src="/images/certificates/iso-company.webp"
-            alt="ISO Company"
+            alt="ISO Company Certification"
+            width={64}
+            height={64}
             loading="lazy"
             className="w-16 lg:w-18 mx-auto hover:scale-105 transition"
             data-aos="zoom-in"
@@ -67,7 +75,9 @@ function Certifications() {
 
           <img
             src="/images/certificates/ce.webp"
-            alt="CE"
+            alt="CE Certification"
+            width={64}
+            height={64}
             loading="lazy"
             className="w-16 lg:w-18 mx-auto hover:scale-105 transition"
             data-aos="zoom-in"
@@ -75,7 +85,9 @@ function Certifications() {
 
           <img
             src="/images/certificates/iec.webp"
-            alt="IEC"
+            alt="IEC Certification"
+            width={64}
+            height={64}
             loading="lazy"
             className="w-16 lg:w-18 mx-auto hover:scale-105 transition"
             data-aos="zoom-in"

@@ -24,8 +24,8 @@ function AboutSection() {
                         Making modern, durable and safe beds since 2015.
                     </p>
                     <div className='flex justify-center lg:justify-start mt-4'>
-                        <Link to="/beds" className="mt-3 lg:px-8 lg:py-3 py-2 px-6 border-2 border-gray-700 rounded-full hover:text-white hover:bg-gray-800">
-                            Learn More
+                        <Link to="products?category=Hospital%20Beds" className="mt-3 lg:px-8 lg:py-3 py-2 px-6 border-2 border-gray-700 rounded-full hover:text-white hover:bg-gray-800">
+                            Learn More About Beds
                         </Link>
                     </div>
                 </div>

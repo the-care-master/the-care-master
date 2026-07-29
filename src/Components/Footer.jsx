@@ -12,15 +12,18 @@ const socialLinks = [
   {
     icon: <FaFacebook size={20} />,
     link: "https://facebook.com/",
+    label:"Facebook Profile"
     
   },
   {
     icon: <FaInstagram size={20} />,
     link: "https://www.instagram.com/thecaremaster/",
+    label:"Instagram Profile"
   },
   {
     icon: <FaLinkedin size={20} />,
     link: "https://linkedin.com/",
+    label:"Linkedin Profile"
   },
 ];
 
@@ -51,6 +54,7 @@ export default function Footer() {
                   key={index}
                   href={item.link}
                   target="_blank"
+                  aria-label={item.label}
                   rel="noopener noreferrer"
                   className="w-12 h-12 rounded-full bg-gray-700 flex items-center justify-center hover:bg-sky-600 hover:scale-110 duration-300"
                 >

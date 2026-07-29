@@ -1,4 +1,3 @@
-
 import {
   Leaf,
   HeartHandshake,
@@ -8,25 +7,21 @@ import {
 import React from "react";
 
 const clients = [
-  "/images/clients/apex.webp",
-  "/images/clients/apollo.webp",
-  "/images/clients/fortune.webp",
-  "/images/clients/gmch.webp",
-
-  "/images/clients/jnu.webp",
-  "/images/clients/kd.webp",
-  "/images/clients/manipal.webp",
-  "/images/clients/pes.webp",
-
-  "/images/clients/hcg.webp",
-  "/images/clients/pmch.webp",
-  "/images/clients/jmch.webp",
-  "/images/clients/sal.webp",
-
-  "/images/clients/sai.webp",
-  "/images/clients/zydus.webp",
+  { src: "/images/clients/apex.webp", name: "Apex" },
+  { src: "/images/clients/apollo.webp", name: "Apollo" },
+  { src: "/images/clients/fortune.webp", name: "Fortune" },
+  { src: "/images/clients/gmch.webp", name: "GMCH" },
+  { src: "/images/clients/jnu.webp", name: "JNU" },
+  { src: "/images/clients/kd.webp", name: "KD" },
+  { src: "/images/clients/manipal.webp", name: "Manipal" },
+  { src: "/images/clients/pes.webp", name: "PES" },
+  { src: "/images/clients/hcg.webp", name: "HCG" },
+  { src: "/images/clients/pmch.webp", name: "PMCH" },
+  { src: "/images/clients/jmch.webp", name: "JMCH" },
+  { src: "/images/clients/sal.webp", name: "SAL" },
+  { src: "/images/clients/sai.webp", name: "SAI" },
+  { src: "/images/clients/zydus.webp", name: "Zydus" },
 ];
-
 
 function ClientSection() {
   return (
@@ -53,7 +48,7 @@ function ClientSection() {
 
           <div className="grid grid-cols-4 border border-[#e5e5e5]">
 
-            {clients.map((logo, index) => (
+            {clients.map((client, index) => (
               <div
                 key={index}
                 className="
@@ -70,11 +65,14 @@ function ClientSection() {
                 data-aos="zoom-in"
               >
                 <img
-                  src={logo}
-                  alt=""
+                  src={client.src}
+                  alt={`${client.name} logo`}
+                  width={140}
+                  height={56}
                   loading="lazy"
                   className="
                     max-h-14
+                    w-auto
                     object-contain
                     hover:scale-105
                     duration-300
