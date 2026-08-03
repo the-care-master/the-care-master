@@ -6,8 +6,10 @@ import ProdsSlider from "../Components/ProdsSlider";
 import { categories, categoryDescriptions, products } from "../Components/ProductsData";
 import { Link, useSearchParams } from "react-router-dom";
 import Aos from "aos";
+const FALLBACK_IMAGE = "/images/placeholder-image.webp";
 
 export default function Products() {
+    
     const [searchParams] = useSearchParams();
 
     const categoryFromUrl = searchParams.get("category");
@@ -84,9 +86,13 @@ export default function Products() {
                         >
                             
                             <img
-                                src={product.image}
+                                src={product.image || FALLBACK_IMAGE}
                                 alt={product.name}
                                 loading="lazy"
+                                onError={(e) => {
+                                    e.currentTarget.onerror = null; // Prevents infinite loops if fallback also fails
+                                    e.currentTarget.src = FALLBACK_IMAGE;
+                                }}
                                 className="h-64 mx-auto object-contain transition duration-300 hover:scale-105"
                             />
                             <h3 className="my-4 text-xl font-bold font-serif uppercase text-gray-800">
